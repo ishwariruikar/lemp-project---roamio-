@@ -14,6 +14,52 @@ Matching Algorithm	Suggests compatible Roam-Mates based on profile data
 Group Chat (MVP)	In-trip chat and bonding tools
 Review System	Post-trip reviews and feedback
 Memory Sharing	Upload and view trip photos and captions
+
+# "Trips, games, good vibes — all in one epic adventure!"
+
+# Target Audience
+Solo travelers
+Young professionals & digital nomads
+Students or gap-year explorers
+Travel influencers or content creators
+
+# Roamio’s Value
+Removes the fear of traveling alone
+Builds a global community of like-minded travelers
+Promotes safe, social, spontaneous adventure
+
+# How Roamio Works – Step-by-Step
+1. User Onboarding
+      I.	Sign Up / Login via email or Google
+      II.	Create a profile with:Travel interests (trekking, beach, festivals, etc.)
+      III.	Preferred destinations
+      IV.	Travel dates or availability
+      V.	Age, gender, language, personality type (optional)
+      VI.	Solo/Group travel preferences
+2. Discover or Create Trips
+      I.	Join Existing Trips
+      II.	Browse or filter upcoming group trips:
+      III.	Weekend getaways, backpacking tours, cultural trails, etc.
+      See trip details:
+      I.	Itinerary, location, cost, group size, accommodation, organizer profile
+      II.	View the profiles of people already joining
+      III.	Join with one click
+3. Travel Buddy Matchmaking (Before the trip)
+      I.	Roamio uses a matching algorithm to suggest: People with similar interests or itinerary
+      II.	Compatible travel vibes (e.g., chill, spontaneous, luxury)
+4. In-Trip Experience  (Once the trip begins)
+      I.	Built-in group chat for trip coordination
+      II.	Travel games & conversation starters to help bonding
+      III.	Share photos, track expenses, split bills
+      IV.	Emergency SOS and location sharing (for safety)
+5. Post-Trip Community (After the trip)
+      I.	Leave reviews for the group & trip organizer
+      II.	Add fellow travelers as "Roam-Mates"
+      III.	Upload a shared memory album
+      IV.	Continue chatting and plan future trips
+      V.	Platform Features Summary
+      VI.	Feature	Description
+
 ________________________________________
 # Tech Stack
 Layer	Technology
