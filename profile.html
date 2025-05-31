@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Profile – Roamio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fcd5ce, #fae1dd);
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #f28482;
+        }
+        .profile-info {
+            margin-top: 20px;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Your Profile</h2>
+        <div class="profile-info">
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Joined:</strong> {{ user.created_at }}</p>
+            <p><strong>Total Trips:</strong> {{ user.trip_count }}</p>
+        </div>
+    </div>
+</body>
+</html>
