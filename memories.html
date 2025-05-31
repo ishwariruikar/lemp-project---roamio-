@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memories – Roamio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fff0f3;
+            margin: 0;
+            padding: 0;
+        }
+        .memories-grid {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .memory {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+            text-align: center;
+        }
+        .memory img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .caption {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center; color:#f28482; margin-top:40px;">Your Travel Memories</h2>
+    <div class="memories-grid">
+        {% for memory in memories %}
+        <div class="memory">
+            <img src="{{ memory.image_url }}" alt="Memory Image">
+            <div class="caption">{{ memory.caption }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
