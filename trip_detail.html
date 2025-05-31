@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ trip.title }} – Roamio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fef6f0;
+            margin: 0;
+            padding: 0;
+        }
+        .detail-container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #f28482;
+        }
+    </style>
+</head>
+<body>
+    <div class="detail-container">
+        <h2>{{ trip.title }}</h2>
+        <p><strong>Location:</strong> {{ trip.location }}</p>
+        <p><strong>Date:</strong> {{ trip.date }}</p>
+        <p><strong>Description:</strong></p>
+        <p>{{ trip.description }}</p>
+    </div>
+</body>
+</html>
