@@ -157,6 +157,5 @@ Reports or abuse flags
 
 
 Developed by: ishwari ruikar.
-Contact: hello@roamio.com
 Year: 2025
 
