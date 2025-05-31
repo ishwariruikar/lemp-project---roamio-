@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roamio — Travel Matchmaking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to bottom, #fceabb, #f8b195);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .header {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3.2em;
+	                margin-top: 100px;
+            color: #ff6f61;
+            animation: fadeInDown 1.2s ease-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .sticker {
+            width: 80px;
+            height: auto;
+            margin: 20px auto;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #fff5e6;
+            color: #e07a5f;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.2s;
+	 }
+
+        a.button:hover {
+            background-color: #ffe0b2;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+	   }
+    </style>
+    <script>
+        // Auto-display date and day
+        window.onload = function () {
+            const now = new Date();
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const today = `${days[now.getDay()]}, ${now.toLocaleDateString()}`;
+            document.getElementById("date-day").innerText = today;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Date and Day -->
+    <div class="header">
+        <span id="date-day">Loading...</span>
+    </div>
+
+    <!-- Heading -->
+    <h1>Roamio</h1>
+    <p>Strangers today, roam-mates tomorrow!</p>
+
+    <!-- Travel Sticker (mountains) -->
+    <!-- Travel Icon -->
+<img class="sticker" src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Mountain Travel Icon">
+
+    <br>
+    <a href="/signup" class="button">Get Started</a>
+
+  <!-- Footer -->
+    <div class="footer">
+        📧 hello@roamio.com &nbsp; | &nbsp;☎️ +91-98765-43210
+    </div>
+
+</body>
+</html>      
+
