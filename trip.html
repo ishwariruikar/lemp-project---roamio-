@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trips – Roamio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8edeb;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #f28482;
+        }
+        .trip {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        a {
+            color: #f28482;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Explore Trips</h2>
+        {% for trip in trips %}
+        <div class="trip">
+            <h3>{{ trip.title }}</h3>
+            <p><strong>Location:</strong> {{ trip.location }}</p>
+            <p><strong>Date:</strong> {{ trip.date }}</p>
+            <a href="/trip/{{ trip.id }}">View Details</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
