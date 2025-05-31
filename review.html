@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave a Review – Roamio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f8edeb;
+        }
+        .container {
+            max-width: 500px;
+            margin: 60px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            background: #f28482;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Share Your Review</h2>
+        <form method="POST">
+            <label>Your Trip Review:</label>
+            <textarea name="review_text" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</body>
+</html>
+
